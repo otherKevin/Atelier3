@@ -1,0 +1,16 @@
+
+    .divMenu {
+        display: flex;
+        inline-size: 90rem;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .liste {
+        display: flex;
+        flex-direction: row;
+        inline-size: 75em;
+        justify-content: space-evenly;
+
+    }
