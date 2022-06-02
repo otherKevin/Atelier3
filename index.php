@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . "./menu.php"
+require_once __DIR__ . "./menu.php"
 ?>
 <!DOCTYPE html>
 <html lang="fr">
