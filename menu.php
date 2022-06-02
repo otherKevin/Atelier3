@@ -4,14 +4,14 @@
 $nom = "titre du site";
 
 $tableauMenu = [
-    "lien1" => '<a href="https://community.lebocal.academy/student/practice?practiceId=6062ffba50a2e12ab08af620&moduleId=5f4d8a65551e947e4f4f927b&trainingId=5f4d8a09551e947e4f4f9277">Atelier 3</a>',
-    "lien2" => '<a href="https://community.lebocal.academy/private/resources/l6b229ifreg2spkh841634295880690.1.pdf">Le Cours</a>',
-    "lien3" => '<a href="https://github.com/">GitHub</a>'
+    "Atelier PHP 3" => "https://community.lebocal.academy/student/practice?practiceId=6062ffba50a2e12ab08af620&moduleId=5f4d8a65551e947e4f4f927b&trainingId=5f4d8a09551e947e4f4f9277",
+    "Cours" => "https://community.lebocal.academy/private/resources/l6b229ifreg2spkh841634295880690.1.pdf",
+    "GitHub" => "https://github.com/"
 ];
 
 $tableauFooter = [
-    "lien1" => '<a href="https://vuejs.org/guide/introduction.html#what-is-vue">Vue.js</a>',
-    "lien2" => '<a href="https://www.php.net/">PHP(HP)</a>'
+    "Vue.js" => "https://vuejs.org/guide/introduction.html#what-is-vue",
+    "PHP" => "https://www.php.net/"
 
 ];
 
@@ -25,8 +25,10 @@ function afficher_menu($nom, $tableau)
 
         <div class="divTableau">
             <ul class="liste">
-                <?php foreach ($tableau as $index => $value) { ?>
-                    <li> <?php echo $value ?> </li>
+                <?php foreach ($tableau as $name => $link) { ?>
+                    <li>
+                        <a href="<?php echo $link ?>"> <?php echo $name ?></a>
+                    </li>
 
                 <?php } ?>
             </ul>
